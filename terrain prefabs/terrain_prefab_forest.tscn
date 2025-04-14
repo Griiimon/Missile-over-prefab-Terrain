@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://e7ktqg2jxx5g"]
+
+[node name="Terrain Prefab Forest" type="Node2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.281109, 0.672913, 0.278856, 1)
+polygon = PackedVector2Array(0, 0, 1000, 0, 1000, 400, 0, 400)
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2(48, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D2"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+position = Vector2(224, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D3"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)
+
+[node name="Polygon2D4" type="Polygon2D" parent="."]
+position = Vector2(288, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D4"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)
+
+[node name="Polygon2D5" type="Polygon2D" parent="."]
+position = Vector2(464, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D5"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)
+
+[node name="Polygon2D6" type="Polygon2D" parent="."]
+position = Vector2(576, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D6"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)
+
+[node name="Polygon2D7" type="Polygon2D" parent="."]
+position = Vector2(736, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D7"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)
+
+[node name="Polygon2D8" type="Polygon2D" parent="."]
+position = Vector2(880, 0)
+color = Color(0.56452, 0.199767, 0.130771, 1)
+polygon = PackedVector2Array(0, 0, 0, -32, 16, -32, 16, 0)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D8"]
+color = Color(0.271867, 0.436923, 0.0772797, 1)
+polygon = PackedVector2Array(-16, -32, -16, -80, 32, -80, 32, -32)

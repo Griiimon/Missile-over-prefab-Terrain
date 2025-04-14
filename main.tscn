@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cvfxo4snof7fd"]
+
+[ext_resource type="Script" uid="uid://bneednjajrcbn" path="res://level_generator.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c1lrcid31lw1v" path="res://terrain prefabs/terrain_prefab_city.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bkaauv1u6tfpl" path="res://terrain prefabs/terrain_prefab_desert.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://e7ktqg2jxx5g" path="res://terrain prefabs/terrain_prefab_forest.tscn" id="4_7mycd"]
+[ext_resource type="Script" uid="uid://2o63s8lngrkl" path="res://rocket.gd" id="5_lquwl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lquwl"]
+font_size = 30
+
+[node name="Main" type="Node2D"]
+
+[node name="Level Generator" type="Node2D" parent="." node_paths=PackedStringArray("viewer_node")]
+script = ExtResource("1_ig7tw")
+prefabs = Array[PackedScene]([ExtResource("2_1bvp3"), ExtResource("3_lquwl"), ExtResource("4_7mycd")])
+viewer_node = NodePath("../Rocket")
+
+[node name="Rocket" type="CharacterBody2D" parent="."]
+position = Vector2(352, 272)
+script = ExtResource("5_lquwl")
+speed = 1500.0
+
+[node name="Polygon2D" type="Polygon2D" parent="Rocket"]
+color = Color(0.229432, 0.230242, 0.157081, 1)
+polygon = PackedVector2Array(-16, -16, 48, -16, 64, 0, 48, 16, -16, 16)
+
+[node name="Camera2D" type="Camera2D" parent="Rocket"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Press right"
+label_settings = SubResource("LabelSettings_lquwl")
+horizontal_alignment = 1

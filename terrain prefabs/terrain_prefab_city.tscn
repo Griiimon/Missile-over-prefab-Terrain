@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c1lrcid31lw1v"]
+
+[node name="Terrain Prefab City" type="Node2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.281109, 0.672913, 0.278856, 1)
+polygon = PackedVector2Array(0, 0, 1000, 0, 1000, 400, 0, 400)
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+color = Color(0.417257, 0.417257, 0.417257, 1)
+polygon = PackedVector2Array(64, 0, 64, -80, 128, -80, 128, 0)
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+position = Vector2(176, 0)
+color = Color(0.417257, 0.417257, 0.417257, 1)
+polygon = PackedVector2Array(64, 0, 64, -80, 128, -80, 128, 0)
+
+[node name="Polygon2D4" type="Polygon2D" parent="."]
+position = Vector2(368, 0)
+color = Color(0.417257, 0.417257, 0.417257, 1)
+polygon = PackedVector2Array(64, 0, 64, -40, 128, -40, 128, 0)
+
+[node name="Polygon2D5" type="Polygon2D" parent="."]
+position = Vector2(560, 0)
+color = Color(0.417257, 0.417257, 0.417257, 1)
+polygon = PackedVector2Array(64, 0, 64, -80, 128, -80, 128, 0)
+
+[node name="Polygon2D6" type="Polygon2D" parent="."]
+position = Vector2(768, 0)
+color = Color(0.417257, 0.417257, 0.417257, 1)
+polygon = PackedVector2Array(64, 0, 64, -60, 128, -60, 128, 0)
